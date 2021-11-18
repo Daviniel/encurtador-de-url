@@ -7,7 +7,7 @@ export class URLController {
     public async shorten (req: Request, response: Response): Promise<void> {
 
         const { originURL } = req.body
-        const url = await URLModel.FindOne({ originURL })
+        const url = await URLModel.findOne({ originURL })
         if (url.) {
             response.json(url)
             return
