@@ -8,7 +8,7 @@ export class URLController {
 
         const { originURL } = req.body
         const url = await URLModel.findOne({ originURL })
-        if (url.) {
+        if (url) {
             response.json(url)
             return
         }
